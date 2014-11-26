@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+# Think this has O(n) complexity because count
+# is proportional to limit (given constant n).
+# So the range of numbers we have to sum increases
+# linearly with limit.
+# Could probably do better!
 def sum_of_multiples(n, limit):
    r = (limit - 1) % n
    count = (limit - r) / n
