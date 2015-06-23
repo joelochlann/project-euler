@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 
-# Think this has O(n) complexity because count
+# If we list all the natural numbers below 10
+# that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+# The sum of these multiples is 23.
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+# Think this has O(limit) complexity because count
 # is proportional to limit (given constant n).
 # So the range of numbers we have to sum increases
 # linearly with limit.
 # Could probably do better!
+# Perhaps by considering the formula for the sum or an arithmetic series?
 def sum_of_multiples(n, limit):
    r = (limit - 1) % n
    count = (limit - r) / n
